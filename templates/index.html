@@ -14,9 +14,9 @@
     <header class="topbar">
         <div class="container topbar-content">
             <a href="#inicio" class="brand" aria-label="Ir al inicio de IP Ingeniería">
-                <span class="brand-mark">IP</span>
-                <span class="brand-text">Ingeniería</span>
-            </a>
+    
+    <span class="brand-text">IP Ingeniería</span>
+</a>
 
             <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
 
@@ -34,6 +34,13 @@
         <section id="inicio" class="hero">
             <div class="container hero-grid">
                 <div>
+    <div class="hero-brand">
+  <img src="{{ url_for('static', filename='ogo.png') }}" alt="IP Ingeniería" class="logo-pequeno">
+  <div class="hero-brand-text">
+    <div class="hero-brand-title">IP Ingeniería</div>
+    <p>Servicios de dibujo técnico, cubicación, estructuras metálicas, piezas mecanizadas y apoyo a fabricación.</p>
+  </div>
+</div>
                     <span class="eyebrow">Dibujo técnico · Proyectos · Fabricación</span>
                     <h1>Planos, cubicación y soluciones técnicas para proyectos mecánicos e industriales.</h1>
                     <p class="hero-text">
@@ -217,7 +224,85 @@
             </div>
         </div>
     </footer>
+<section id="proyectos" class="portfolio-section">
+  <div class="container">
+    <div class="portfolio-grid">
 
+      <!-- PROYECTO 1 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto1.png') }}" alt="Plano estructural metálico">
+        <div class="portfolio-content">
+          <h3>Plano estructural metálico</h3>
+          <p>Desarrollo de plano estructural para fabricación en acero con definición de perfiles, uniones y cotas.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 2 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto2.png') }}" alt="Publicación estructural">
+        <div class="portfolio-content">
+          <h3>Proyecto estructural</h3>
+          <p>Publicación técnica de estructura metálica con enfoque en diseño y fabricación.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 3 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto3.png') }}" alt="Sistema portatecles">
+        <div class="portfolio-content">
+          <h3>Sistema portatecles</h3>
+          <p>Diseño de estructura con sistema portatecles para manejo de carga industrial.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 4 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto4.png') }}" alt="Matriz progresiva">
+        <div class="portfolio-content">
+          <h3>Matriz progresiva</h3>
+          <p>Desarrollo de matriz progresiva para procesos de fabricación con criterios dimensionales.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 5 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto5.png') }}" alt="Engranajes rectos">
+        <div class="portfolio-content">
+          <h3>Juego de engranajes</h3>
+          <p>Plano técnico de engranajes rectos con parámetros de mecanizado y fabricación.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 6 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto6.png') }}" alt="Planta estructural">
+        <div class="portfolio-content">
+          <h3>Planta estructural</h3>
+          <p>Plano estructural con cálculos asociados y definición de elementos constructivos.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 7 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto7.png') }}" alt="Conjunto mecanizado">
+        <div class="portfolio-content">
+          <h3>Conjunto mecanizado</h3>
+          <p>Modelado y representación de conjunto mecánico orientado a fabricación.</p>
+        </div>
+      </article>
+
+      <!-- PROYECTO 8 -->
+      <article class="portfolio-card">
+        <img src="{{ url_for('static', filename='proyecto8.png') }}" alt="Pre mecanizado">
+        <div class="portfolio-content">
+          <h3>Pre-mecanizado</h3>
+          <p>Desarrollo de pre-mecanizado para conjunto mecánico previo a proceso final.</p>
+        </div>
+      </article>
+
+    </div>s
+  </div>
+</section>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
